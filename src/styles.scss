@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+
+html {
+	font-size: 62.5%;
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
