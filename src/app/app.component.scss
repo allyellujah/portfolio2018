@@ -4,11 +4,6 @@ main {
   position: relative;
 }
 
-.router-output {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-
 .browser-support {
   position: absolute;
   width: 100vw;

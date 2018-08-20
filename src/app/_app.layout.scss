@@ -1,0 +1,7 @@
+section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  .wrapper {
+    grid-column: 6 / -1;
+  }
+}
