@@ -1,3 +1,6 @@
+@import '/app/_app.normalize';
+@import '/app/_app.variables';
+
 
 html {
 	font-size: 62.5%;
@@ -15,4 +18,38 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 400;
+	font-size: 1.6rem;
+	color: $textColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 4.6rem;
+	line-height: 5.6rem;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+p {
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style-type: none;
+	}
+}
+
+a {
+	color: $textColor;
+	text-decoration: none;
+	&.inline {
+		border-bottom: 1px solid $textColor;
+	}
 }

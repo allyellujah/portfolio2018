@@ -1,7 +1,17 @@
 <main>
+  <div class="browser-support">
+    <div class="modal">
+      <div class="text">
+          <h2>Uh oh! Your browser is pretty old...</h2> 
+          <p>Mom and Dad, if that's you, press the other "e" button!</p> 
+          <p>Or download a <a href="http://outdatedbrowser.com/en" class="inline">shiny new browser here</a>.</p>
+      </div>
+    </div>
+  </div>
   <app-nav></app-nav>
   <div [hidden]="!loading" class="loader"></div>
   <div [hidden]="loading" class="router-output">
+    <div class="angle"></div>
     <router-outlet></router-outlet>
   </div>
 </main>

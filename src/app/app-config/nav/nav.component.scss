@@ -1,0 +1,53 @@
+@import '../../_app.variables';
+
+@keyframes nameMove {
+  from {
+    transform: translateY(400%) scale(3);
+    left: 30%;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    left: 0;
+  }
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  padding: 0 25px;
+  h1 {
+    position: relative;
+    z-index: 100;
+    width: 50%;
+    a {
+      position: absolute;
+      color: $darkPurple;
+      width: 400px;
+      left: 30%;
+      margin: 0;
+      display: block;
+      transform-origin: top left;
+      transform: translateY(400%) scale(3);
+      @supports (display: grid) {
+        animation: 4s nameMove ease-in-out 1s;
+        &.post-animate {
+          transform: translateY(0) scale(1);
+          left: 0;
+        }
+      }
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding-top: 17px;
+    li:nth-child(2), li:nth-child(3) {
+      padding-left: 20px;
+    }
+    a {
+      text-transform: lowercase;
+    }
+  }
+}
